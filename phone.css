@@ -1,0 +1,68 @@
+
+
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    .container{
+    max-width: 1280px;
+    margin: 0 auto;
+    
+    }
+    .phonecontainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    padding-top: 50px;
+    }
+    .phone{
+    text-align: center;
+    padding: 20px;
+    background-color: azure;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.219);
+    border-radius: 20px;
+    }
+    .phone img {
+    width: 100%;
+    }
+    .phone h3{
+    font-size: 30px;
+    color:rgba(4, 7, 8, 0.6);
+    font-weight:600;
+    line-height: 115%;
+    }
+    .phone p {
+    font-size: 20px;
+    color:rgba(151, 74, 22, 0.6);
+    font-weight:500;
+    line-height: 115%;
+    }
+    .phone button {
+    font-size:16px;
+    padding: 10px 25px;
+    margin-top: 10px;
+    background-color: rgb(81, 241, 252);
+    border: none;
+    border-radius: 12px;
+    color:#333;
+    }
+    .search {
+    text-align: center;
+    margin: 30px 0;
+    }
+    .search input{
+    padding: 6px;
+    
+    }
+    
+    .search button{
+    font-size:16px;
+    padding: 10px 25px;
+    margin-top: 10px;
+    background-color: rgb(81, 112, 252);
+    border: none;
+    border-radius: 12px;
+    color:rgb(255, 255, 255);
+    
+    
+    }
