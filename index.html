@@ -11,8 +11,15 @@
     <div class="container">
         <div class="search">
             <input id="search" type="text" placeholder="Choice your phone">
-            <button onclick="lodePhone()">search</button>
+            <button onclick="searchResult()">search</button>
         </div>
+        <div id="empty" class="arrow">
+            <p>Empty search! please choice your phone</p>
+        </div>
+        <div id="noresult" class="arrow">
+            <p>Choose only phone available</p>
+        </div>
+           
             <div id="phonedetails" class="phonedetails">
 
             </div>
@@ -20,6 +27,8 @@
            
         </div>
     </div>
+
+  
     <script src="phone.js"></script>
 </body>
 </html>
