@@ -21,12 +21,38 @@ const lodePhone = () =>{
                 <img src="${phone.image}" alt="">
                 <h3>${phone.phone_name}</h3>
                 <p>${phone.brand}</p>
-                <button>Click her</button>`
-                console.log(phone)
+                
+                
+                <button onclick="displaydetails('${phone.slug}')">Click her</button>`
+                // console.log(phone)
                container.appendChild(div)
              }
          
-         });
+         }); 
     }
+}
+
+const displaydetails = details =>{
+    const url = `https://openapi.programming-hero.com/api/phone/${details}`;
+    fetch(url)
+    .then(res => res.json())
+    .then(data => phonedetails(data.data));
+
+    const detailscontainer = document.getElementById('phonedetails');
+    const phonedetails = detail =>{
+        const div = document.createElement('div');
+        div.classList.add('phone','detail');
+        div.innerHTML = `
+        <img src="${detail.image}" alt="">
+        <h3>${detail.phone_name}</h3>
+        <p>${detail.brand}</p>
+        
+        `
+        detailscontainer.appendChild(div)
+
+    }
+
+
+ 
 }
 

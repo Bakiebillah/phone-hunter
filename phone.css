@@ -40,10 +40,14 @@
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.219);
     border-radius: 20px;
     }
+
+    
     .phone img {
-    width: 100%;
+    width: 90%;
+
     }
     .phone h3{
+    margin-top: 10px;
     font-size: 30px;
     color:rgba(4, 7, 8, 0.6);
     font-weight:600;
@@ -63,6 +67,15 @@
     border: none;
     border-radius: 12px;
     color:#333;
+    }
+
+    .detail{
+        width: 50%;
+        margin: 0 auto;
+        
+    }
+    .detail img {
+        width: 50%;
     }
     .search {
     text-align: center;
